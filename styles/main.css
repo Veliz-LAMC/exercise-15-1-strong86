@@ -8,10 +8,10 @@ html {
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: 87.5%;
     width: 800px;
     margin: 0 auto;
-    border: 3px solid #931420;
+    border: 3px solid #800000;
     background-color: #fffded;
 }
 a:focus, a:hover {
@@ -19,7 +19,7 @@ a:focus, a:hover {
 }
 /* the styles for the header */
 header {
-	padding: 1.5em 0 2em 0;
+	padding: 1.5em  0;
 	border-bottom: 3px solid #931420;
 		background-image: -moz-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -91,19 +91,23 @@ main {
 
 /* the styles for the section */
 section {
+	
+	clear: left;
 	width: 525px;
 	float: right;
-	padding: 0 20px 20px 20px;
+	padding: 0 20px ;
 }
 section h1 {
+	color: #800000;
 	font-size: 150%;
 	padding: .5em 0 .25em 0;
 	margin: 0;
 }
 section h2 {
 	color: #800000;
-	font-size: 130%;
+	font-size: 120%;
 	padding: .5em 0 .25em 0;
+	padding-bottom: .25em;
 }
 section p {
 	padding-bottom: .5em;
@@ -113,7 +117,7 @@ section blockquote {
 	font-style: italic;
 }
 section ul {
-	padding: 0 0 .25em 1.25em;
+	padding: 0 0 1.5em 1.25em;
 	list-style-type: circle;
 }
 section li {
@@ -125,7 +129,12 @@ article {
 	padding: .5em 0;
 	border-top: 2px solid #800000;
 	border-bottom: 2px solid #800000;
+	
 }
+article h1 {
+color: black;
+}
+
 article h2 {
 	padding-top: 0;
 }
@@ -137,32 +146,82 @@ article img {
 	float: right;
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
+	transform: rotate(12deg);
 }
 
 /* the styles for the aside */
 aside {
 	width: 215px;
 	float: right;
-	padding: 0 0 20px 20px;
+	padding-left: 20px;
 }
 aside h2 {
 	color: #800000;
-	font-size: 130%;
+	font-size: 150%;
 	padding: .5em 0 .25em 0;
 }
 
 aside h3 {
-	font-size: 105%;
+	font-size: 120%;
 	padding-bottom: .25em;
 }
 aside img {
 	padding-bottom: 1em;
 }
 
+figcaption {
+
+color: #800000;
+
+}
+
+table {
+
+border-collapse: collapse;
+
+}
+
+thead, tfoot {
+
+border-top: 2px solid #800000;
+
+border-bottom: 2px solid #800000;
+
+}
+
+th, td {
+
+padding: .2em .7em;
+
+text-align: left;
+
+}
+
+tfoot th, tfoot td {
+
+text-align: right;
+
+font-weight: bold;
+
+}
+
+.border_bottom {
+
+border-bottom: 2px solid #800000;
+
+}
+
+.right {
+
+text-align: right;
+
+}
+
 /* the styles for the footer */
 footer {
-	background-color: #931420;
+	background-color: #800000;
 	clear: both;
+	color: #fffded;
 
 }
 footer p {
